@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: navy;
+            color: #ffff;
+            font-family: 'poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(1, 1,38);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+           text-decoration: none;
+            color: #ffff;
+        }
+        nav ul li a:hover{
+            font-size: 1.01rem;
+           
+            color: #ff0000;
+        }
+        main hr{
+            border: 0;
+            height: 1.2px;
+            margin: 60px 84px;
+            background-color: #9c97f1;
+        }
+        .left{
+            font-size: 1.5rem;
+
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        .firstSection >div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 2.5rem;
+           
+
+        }
+        .rightSection img{
+            width: 80%;
+            margin: 50px 0;
+        }
+        .purple{
+            color: rgb(65, 208, 255);
+
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(65, 208, 255);
+
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin:auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background: #ffff;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: #ffff;
+            margin: 0 120px;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9;
+
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        .vertical-dec{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color:#0e0e1a;
+           
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content:space-evenly;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px   0;
+        }
+        .button-container {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.unique-button {
+    top: 20px;
+    padding: 12px 40px;
+    font-size: 18px;
+    color: white;
+    background:hsl(0, 100%, 48%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unique-button::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 200%;
+    height: 300%;
+    /* background: rgba(98, 20, 255, 0.414); */
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.unique-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.unique-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(6, 222, 255, 0.614);
+}
+
+.unique-button span {
+    position: relative;
+    z-index: 1;
+}
+@media screen and (max-width: 1200px){
+
+.box{
+    flex-direction: column;
+}
+.secondSection .vertical{
+    height: unset;
+}
+.vertical-title, .vertical-dec{
+    left: 45px;
+}
+.secondSection .box{
+    width: 50vw;
+}
+footer{
+    display: none;
+}
+.firstSection{
+    flex-direction:column-reverse;   
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Hassan Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Hassan</span>
+                and Iam a Passionate
+                <span id="element"></span>
+                <div class="button-container">
+                    
+                    <button class="unique-button">Dow Resume</button>
+                    <button class="unique-button">Visit Github</button>
+                </div>
+            </div>
+              
+            
+            
+            <div class="rightSection">
+                <img src="fsw-3-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far </span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="download-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-dec">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum aliquid optio eligendi, voluptas, animi quas tempore odit maxime alias
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="p1-removebg-preview (1).png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-dec">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum aliquid optio eligendi, voluptas, animi quas tempore odit maxime alias
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="facebook-icon-preview-1-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-dec">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum aliquid optio eligendi, voluptas, animi quas tempore odit maxime alias
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="download__1_-removebg-preview (1).png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-dec">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum aliquid optio eligendi, voluptas, animi quas tempore odit maxime alias
+                        
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    JS Developer (2012-2014)
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Hassan Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; HassanPortfoli.com | All right reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Web Designer','Developer'],
+          typeSpeed: 100,
+        });
+      </script>
+</body>
+</html>
